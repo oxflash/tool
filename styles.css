@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #42e695);
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #walletButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #42e695;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #walletButton:hover {
+    background: #32cd32;
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .solana-coin {
+    width: 150px;
+    animation: rotate 5s infinite linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .balance-section {
+    margin-top: 2rem;
+  }
+  
+  #balance {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .token-holdings {
+    margin-top: 2rem;
+  }
+  
+  #tokenList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #tokenList li {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .recover-button {
+    padding: 0.5rem 1rem;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Dialog Styles */
+  dialog {
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+  }
+  
+  dialog button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #proceedButton {
+    background: #42e695;
+  }
+  
+  #cancelButton {
+    background: #ff4500;
+  }
