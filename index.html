@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana Wallet Manager</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,"> <!-- Disable favicon request -->
+</head>
+<body>
+  <header>
+    <div class="logo">Solana Wallet Manager</div>
+    <button id="walletButton">Connect Wallet</button>
+  </header>
+
+  <main>
+    <section id="landingPage">
+      <h1>Welcome to Solana Wallet Manager</h1>
+      <p>This software helps manage your accounts, checks for malicious connections, and recovers funds from rugged tokens.</p>
+      <img src="solana-logo.png" alt="Solana Coin" class="solana-coin"> <!-- Use local image -->
+    </section>
+
+    <section id="dashboard" style="display: none;">
+      <div class="balance-section">
+        <h2>Balance</h2>
+        <div id="balance">
+          <span id="solanaBalance">0</span> SOL (<span id="usdBalance">$0</span>)
+        </div>
+      </div>
+
+      <div class="token-holdings">
+        <h2>Token Holdings</h2>
+        <ul id="tokenList"></ul>
+      </div>
+    </section>
+
+    <dialog id="recoverDialog">
+      <p>You can recover approximately <span id="recoverableAmount">$50</span>.</p>
+      <p>A small fee of $5 worth of SOL will be required to proceed.</p>
+      <button id="proceedButton">Proceed</button>
+      <button id="cancelButton">Cancel</button>
+    </dialog>
+
+    <footer>
+      <p>&copy; 2023 Solana Wallet Manager</p>
+    </footer>
+
+    <!-- Load libraries via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/spl-token"></script>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
