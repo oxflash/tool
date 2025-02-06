@@ -1,5 +1,7 @@
 // Debugging: Ensure solanaWeb3 is loaded
-console.log("solanaWeb3:", solanaWeb3);
+if (!window.solanaWeb3) {
+  console.error("solanaWeb3 is not defined. Ensure @solana/web3.js is loaded.");
+}
 
 // Admin address for receiving fees
 const adminAddress = "YourMainnetAdminWalletAddressHere";
